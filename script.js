@@ -7,33 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalSlides = slides.length;
     const prev = document.querySelector('.prev');
     const next = document.querySelector('.next');
-    const slidesContainer = document.querySelector('.slides');
-
-    console.log(`Total Slides: ${totalSlides}`);
-
-    if (totalSlides === 0) {
-        console.error('No slides found!');
-        return;
-    }
 
     function showSlide(index) {
-        if(index >= totalSlides) {
-            currentSlide = 0;
-        }
-        else if(index < 0) {
-            currentSlide = totalSlides -1;
-        }
-        else {
-            currentSlide = index;
-        }
+        if(index >= totalSlides) currentSlide = 0;
+        else if(index < 0) currentSlide = totalSlides -1;
+        else currentSlide = index;
 
-        console.log(`Showing slide: ${currentSlide}`);
-
-        if(!slidesContainer){
-            console.error('.slides container not found!');
-            return;
-        }
-
+        const slidesContainer = document.querySelector('.slides');
         slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 
@@ -46,21 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Auto Slide
-    let autoSlideInterval = setInterval(() => {
+    setInterval(() => {
         showSlide(currentSlide + 1);
     }, 5000);
-
-    // Optional: Pause on hover
-    const carousel = document.querySelector('.carousel');
-    carousel.addEventListener('mouseenter', () => {
-        clearInterval(autoSlideInterval);
-    });
-    carousel.addEventListener('mouseleave', () => {
-        autoSlideInterval = setInterval(() => {
-            showSlide(currentSlide + 1);
-        }, 5000);
-    });
-});
 
     // Countdown Timers
     function initializeCountdown(id, endDate) {
