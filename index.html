@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmir Travel</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkz5bTdu3Xt9ITD3/hhuCikE5nO5YJiSE1KXv6bbPRt8pUn1XxSXiW7gCxZdz6l/WFfCjG1LyE92nXgg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1><a href="#">Kashmir Travel</a></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#book-cab">Book a Cab</a></li>
+                    <li><a href="#self-drive">Self-Drive</a></li>
+                    <li class="dropdown">
+                        <a href="#">More <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About Us</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="#gallery">Gallery</a>
+                            <a href="#videos">Videos</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:info@kashmirtravel.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide animate__animated">
+                    <img src="images/dal_lake.jpg" alt="Dal Lake">
+                    <div class="slide-overlay">
+                        <h2>Experience the Serenity of Dal Lake</h2>
+                        <a href="#tours" class="btn animate__animated animate__fadeInUp">Explore Now</a>
+                    </div>
+                </div>
+                <div class="slide animate__animated">
+                    <img src="images/gulmarg.jpg" alt="Gulmarg">
+                    <div class="slide-overlay">
+                        <h2>Adventure Awaits in Gulmarg</h2>
+                        <a href="#tours" class="btn animate__animated animate__fadeInUp">Explore Now</a>
+                    </div>
+                </div>
+                <div class="slide animate__animated">
+                    <img src="images/pahalgam.jpg" alt="Pahalgam">
+                    <div class="slide-overlay">
+                        <h2>Discover the Beauty of Pahalgam</h2>
+                        <a href="#tours" class="btn animate__animated animate__fadeInUp">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <span class="prev"><i class="fas fa-chevron-left"></i></span>
+                <span class="next"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <a href="about.html" class="who-we-are animate__animated animate__fadeIn">Who We Are</a>
+    </section>
+
+    <!-- Call to Action Buttons -->
+    <section class="cta">
+        <div class="container">
+            <a href="#tours" class="btn">View Tours</a>
+            <a href="booking.html" class="btn btn-primary">Make a Booking</a>
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <div class="container">
+            <form id="searchForm">
+                <input type="text" id="destination" placeholder="Destination" required>
+                <select id="duration" required>
+                    <option value="">Duration</option>
+                    <option value="1">1 Day</option>
+                    <option value="3">3 Days</option>
+                    <option value="5">5 Days</option>
+                    <option value="7">7 Days</option>
+                </select>
+                <select id="price" required>
+                    <option value="">Price Range</option>
+                    <option value="0-500">$0 - $500</option>
+                    <option value="500-1000">$500 - $1000</option>
+                    <option value="1000-2000">$1000 - $2000</option>
+                    <option value="2000+">$2000+</option>
+                </select>
+                <button type="submit" class="btn">Search</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section id="tours" class="featured-tours">
+        <div class="container">
+            <h2>Featured Tours</h2>
+            <div class="tours-grid" id="toursGrid">
+                <!-- Tours will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Sections -->
+    <section class="promotions">
+        <div class="container">
+            <div class="promo-item">
+                <h3>Summer Special Offer</h3>
+                <p>Get 20% off on all tours booked before</p>
+                <div id="countdown1" class="countdown"></div>
+            </div>
+            <div class="promo-item">
+                <h3>Early Bird Discount</h3>
+                <p>Book your tour 3 months in advance and save</p>
+                <div id="countdown2" class="countdown"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Highlights -->
+    <section class="blog-highlights">
+        <div class="container">
+            <h2>Latest From Our Blog</h2>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <div id="newsletterMessage"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="faqs.html">FAQs</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:info@kashmirtravel.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Kashmir Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
