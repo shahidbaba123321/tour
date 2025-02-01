@@ -2,19 +2,19 @@
     {
         "id": 1,
         "title": "Top 10 Attractions in Kashmir",
-        "image": "images/blog1.jpg",
+        "image": "https://github.com/user-attachments/assets/2596cef1-9c13-47f0-9c30-60ea2485ab0b",
         "link": "blog-post1.html"
     },
     {
         "id": 2,
         "title": "Travel Tips for a Safe Journey",
-        "image": "images/blog2.jpg",
+        "image": "https://github.com/user-attachments/assets/6b55edb6-5841-4bc3-a9d6-20a32f37b85a",
         "link": "blog-post2.html"
     },
     {
         "id": 3,
         "title": "Exploring the Hidden Gems of Gulmarg",
-        "image": "images/blog3.jpg",
+        "image": "https://github.com/user-attachments/assets/adc3d961-0014-4961-aa7d-8f83579bcb89",
         "link": "blog-post3.html"
     }
 ]
