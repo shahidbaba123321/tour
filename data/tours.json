@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Dal Lake Experience",
+        "destination": "Dal Lake",
+        "duration": 1,
+        "price": 300,
+        "description": "Enjoy a serene boat ride and explore the floating gardens.",
+        "image": "images/dal_lake.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Gulmarg Adventure",
+        "destination": "Gulmarg",
+        "duration": 3,
+        "price": 450,
+        "description": "Experience the thrill of skiing and cable car rides.",
+        "image": "images/gulmarg.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Pahalgam Paradise",
+        "destination": "Pahalgam",
+        "duration": 5,
+        "price": 350,
+        "description": "Explore lush meadows and picturesque valleys.",
+        "image": "images/pahalgam.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Srinagar Cultural Tour",
+        "destination": "Srinagar",
+        "duration": 2,
+        "price": 400,
+        "description": "Dive into the rich culture and heritage of Srinagar.",
+        "image": "images/srinagar.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Sonamarg Trek",
+        "destination": "Sonamarg",
+        "duration": 4,
+        "price": 500,
+        "description": "Embark on a thrilling trek through the scenic Sonamarg.",
+        "image": "images/sonamarg.jpg"
+    }
+]
