@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah L.",
+        "review": "Kashmir Travel made our trip unforgettable. Highly recommended!",
+        "image": "images/testimonial1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Michael B.",
+        "review": "Professional service and amazing tour packages.",
+        "image": "images/testimonial2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Emily R.",
+        "review": "A wonderful experience exploring Kashmir with such a dedicated team.",
+        "image": "images/testimonial3.jpg"
+    }
+]
