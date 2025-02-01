@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize Countdowns with desired end dates
-    initializeCountdown('countdown1', 'December 31, 2025 23:59:59');
-    initializeCountdown('countdown2', 'November 30, 2025 23:59:59');
+    initializeCountdown('countdown1', 'December 31, 2024 23:59:59');
+    initializeCountdown('countdown2', 'November 30, 2024 23:59:59');
 
     // Advanced Search Filtering
     let toursData = [];
