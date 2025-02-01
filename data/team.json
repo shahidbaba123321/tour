@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Founder & CEO",
+        "bio": "John has over 15 years of experience in the travel industry, leading Kashmir Travel with a passion for customer satisfaction and sustainable tourism.",
+        "image": "images/team_member1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Head of Operations",
+        "bio": "Jane ensures seamless operations and excellent service delivery, making sure every tour is memorable and well-organized.",
+        "image": "images/team_member2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Emily Johnson",
+        "position": "Marketing Manager",
+        "bio": "Emily drives our marketing strategies, connecting with travelers worldwide and promoting the natural beauty of Kashmir.",
+        "image": "images/team_member3.jpg"
+    }
+]
